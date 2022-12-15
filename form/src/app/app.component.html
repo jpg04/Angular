@@ -1,0 +1,54 @@
+<!-- <div class="container-fluid">
+  <div class="row">
+    <h2 class="text-center">Registration Form</h2>
+    <div class="form-bg">
+      <div class="form" #regForm="ngForm"(click)="register(regForm">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter Your First Name" name="fname" ngModel required>
+          <span ngIf="name.touched && !name.valid" class="text-danger">Please Enter a Valid First Name</span>
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter Your Last Name" name="lname" ngModel required>
+          <span ngIf="name.touched && !name.valid" class="text-danger">Please Enter a Valid Last Name</span>
+          <label>Email</label>
+          <input type="email" placeholder="Enter Your Email" name="fname" ngModel required>
+          <span ngIf="email.touched && !email.valid" class="text-danger">Please Enter a Valid Email</span>
+          <label>Password</label>
+          <input type="password" placeholder="Enter Your Password" name="password" ngModel required>
+          <span ngIf="password.touched && !email.valid" class="text-danger">Please Enter a Valid Email</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Reactive-froms -->
+<!-- <div class="container">
+  <div class="row">
+    <form [formGroup]="formreg" (click)="submit">
+    <form action="">
+      <div class="form-group">
+        <label for="">Name:</label>
+        <input type="text" class="form-control" placeholder="Enter Your Name" formControlName=Name>
+      </div>
+      <div class="form-group">
+        <label for="">Email:</label>
+        <input type="email" class="form-control" placeholder="Enter Your Email" formControlName="Email">
+      </div>
+      <div class="form-group">
+        <label for="number">Mobile:</label>
+        <input type="number" class="form-control" id="number" placeholder="Enter Your Mobile" formControlName="Mobile">
+      </div>
+      <div class="form-group">
+        <label for="">Password:</label>
+        <input type="password" class="form-control"   placeholder="Enter Your password" formControlName="Password">
+      </div>
+      <button value="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div> -->
+
+<label for="name">Name: </label>
+<input id="name" type="text" [formControl]="name">
+
+<!-- <app-form></app-form> -->
